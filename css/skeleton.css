@@ -35,6 +35,9 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
+.container-full-width {
+  width: 100%;
+}
 .column,
 .columns {
   width: 100%;
@@ -135,6 +138,9 @@ body {
 .showreel {
   background-color: black;
   min-height:400px;
+}
+.black {
+  background-color: black;
 }
 
 
