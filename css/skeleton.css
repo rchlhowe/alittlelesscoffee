@@ -34,13 +34,16 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
-.container-full-width {
-  width: 100%;
+  box-sizing: border-box;
 }
 .container-half-width {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.container-full-width {
+  width: 100%;
 }
 .column,
 .columns {
@@ -49,16 +52,26 @@
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 320px) {
   .container {
     width: 85%;
     padding: 0; }
+    .container-half-width {
+      width: 85%;
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+      margin-top: 21%;
+    }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
+  .container, .container-half-width {
     width: 80%; }
+  .container-half-width {
+     margin-top: 36%;
+   }
   .column,
   .columns {
     margin-left: 4%; }
@@ -118,6 +131,15 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
+@media (min-width: 750px) {
+  .container-half-width {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 43%;
+  }
+}
 
 
 /* Base Styles
@@ -140,23 +162,55 @@ body {
   background-size: 100%;
   min-height: 100%;
 }
-.opening-titles-text {
-  font-weight: 400;
+@media (min-width: 320px) {
+  .opening-titles-text {
+    font-weight: 400;
+  }
+  .opening-titles-text h4, .opening-titles-text h1 {
+    color: #ffffff;
+  }
+  .opening-titles-text h1 {
+    font-size: 4.0rem;
+    font-weight: 900;
+  }
+  .opening-titles h4 {
+    font-weight: 400;
+    font-size: 2.4rem;
+  }
 }
-.opening-titles-text h4, .opening-titles-text h1 {
-  color: #ffffff;
+@media (min-width: 550px) {
+  .opening-titles-text h1 {
+    font-size: 4.0rem;
+  }
+  .opening-titles h4 {
+    font-size: 3rem;
+  }
 }
-.opening-titles-text h1 {
-  font-size: 8.0rem;
-  font-weight: 900;
+@media (min-width: 750px) {
+  .opening-titles-text h1 {
+    font-size: 8.0rem;
+  }
+  .opening-titles h4 {
+    font-size: 3.5rem;
+  }
 }
-.opening-titles h4 {
-  font-weight: 400;
-  font-size: 3.5rem;
+@media (min-width: 320px) {
+  .personal-statement-heading {
+     font-size: 3rem;
+  }
+  .personal-statement-para {
+    font-size: 1.2em;
+    padding-top: 24px;
+  }
 }
-.personal-statement-para {
-  font-size: 1.6em;
-  padding-top: 32px;
+@media (min-width: 750px) {
+  .personal-statement-heading {
+     font-size: 3.6rem;
+  }
+  .personal-statement-para {
+    font-size: 1.6em;
+    padding-top: 32px;
+  }
 }
 .showreel {
   min-height:400px;
@@ -172,12 +226,6 @@ body {
   background: url(../images/bg-melt-overlay.png) #27B7D3;
   background-repeat: no-repeat;
   background-size: 100%;
-}
-.vp-player-layout {
-  width: 960px !important;
-  height: 540px !important;
-  border: 19px solid #fff;
-  border-radius: 8px;
 }
 .contact-links {
   margin-bottom: 120px;
@@ -200,7 +248,11 @@ body {
   line-height: 25px;
   vertical-align: middle;
 }
-
+.contact-links-heading {
+  font-weight:600;
+  color:black;
+  padding: 0 20px;
+}
 
 
 /* Typography
