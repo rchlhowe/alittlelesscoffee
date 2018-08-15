@@ -31,12 +31,16 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
 .container-full-width {
   width: 100%;
+}
+.container-half-width {
+  max-width: 960px;
+  margin: 0 auto;
 }
 .column,
 .columns {
@@ -123,34 +127,56 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
-  height: 100%;
+  height: 101%;
 }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
-  background: url(../images/bg-sun-set-wth-melt.jpg) black;
+  color: #ffffff;
+  background: url(../images/bg-sun-set-overlay-blue.jpg) black;
   background-repeat: no-repeat;
   background-size: 100%;
+  min-height: 100%;
 }
-.opening-titles {
-  height: 1100px;
+.opening-titles-text {
+  font-family: 'Exo 2', cursive;
+}
+.opening-titles-text h4, .opening-titles-text h1 {
+  color: #ffffff;
+}
+.opening-titles-text h1 {
+  font-size: 7.0rem;
+  font-weight: 600;
+}
+.personal-statement-para {
+  font-size: 1.6em;
+  padding-top: 32px;
 }
 .showreel {
-  background-color: black;
   min-height:400px;
 }
 .black {
   background-color: black;
 }
+.turquoise {
+  background-color: #27B7D3;
+  display: inline-block;
+}
+.bg-melt {
+  background: url(../images/bg-melt-overlay.png) #27B7D3;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo 2', cursive;
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
@@ -178,7 +204,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #27B7D3;
+  text-decoration: none;
+}
 a:hover {
   color: #0FA0CE; }
 
@@ -252,6 +280,9 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+.center-align {
+  text-align: center;
+}
 
 
 /* Misc
