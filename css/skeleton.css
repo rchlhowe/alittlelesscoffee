@@ -179,6 +179,9 @@ body {
   border: 19px solid #fff;
   border-radius: 8px;
 }
+.contact-links {
+  margin-bottom: 120px;
+}
 .contact-links li {
   margin-bottom: 1rem;
   display: inline;
