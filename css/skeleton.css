@@ -179,6 +179,24 @@ body {
   border: 19px solid #fff;
   border-radius: 8px;
 }
+.contact-links li {
+  margin-bottom: 1rem;
+  display: inline;
+  color: black;
+  font-size: 2rem;
+}
+.contact-links-item {
+  color: black;
+}
+.contact-links-item:first-child {
+  padding-right: 32px;
+}
+.contact-links-item--icon img {
+  width: 30px;
+  padding-right: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+}
 
 
 
