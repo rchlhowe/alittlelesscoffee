@@ -57,7 +57,6 @@
     width: 85%;
     padding: 0; }
     .container-half-width {
-      width: 85%;
       margin: 0 auto;
       padding: 0;
       box-sizing: border-box;
@@ -70,7 +69,7 @@
   .container, .container-half-width {
     width: 80%; }
   .container-half-width {
-     margin-top: 36%;
+     margin-top: 30%;
    }
   .column,
   .columns {
@@ -137,7 +136,7 @@
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
-    margin-top: 43%;
+    margin-top: 53%;
   }
 }
 
@@ -157,9 +156,10 @@ body {
   font-weight: 400;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   color: #ffffff;
-  background: url(../images/bg-sun-set-overlay-blue.jpg) black;
-  background-repeat: no-repeat;
+  background:url(../images/bg-sun-set-overlay-blue.jpg) top, url(../images/bg-melt-overlay.png) 0px 1700px, url(../images/bg-turquoise.png) 0px 2300px repeat-x;
   background-size: 100%;
+  background-repeat:no-repeat;
+  background-color: #000;
   min-height: 100%;
 }
 @media (min-width: 320px) {
@@ -212,32 +212,31 @@ body {
     padding-top: 32px;
   }
 }
-.showreel {
-  min-height:400px;
+.contact {
+  margin-top: 10%;
 }
-.black {
-  background-color: black;
-}
-.turquoise {
-  background-color: #27B7D3;
-  display: inline-block;
-}
-.bg-melt {
-  background: url(../images/bg-melt-overlay.png) #27B7D3;
-  background-repeat: no-repeat;
-  background-size: 100%;
+@media (min-width: 550px) {
+  .contact {
+    margin-top: 15%;
+  }
 }
 .contact-links {
   margin-bottom: 120px;
+  color: #fff;
 }
 .contact-links li {
   margin-bottom: 1rem;
   display: inline;
-  color: black;
   font-size: 2rem;
 }
-.contact-links-item {
-  color: black;
+@media (min-width: 320px) {
+  .contact-links li {
+    display: inline-block;
+    margin-top: 21px;
+  }
+}
+.contact-links li a {
+  color: #fff;
 }
 .contact-links-item:first-child {
   padding-right: 32px;
@@ -250,7 +249,6 @@ body {
 }
 .contact-links-heading {
   font-weight:600;
-  color:black;
   padding: 0 20px;
 }
 
